@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto&display=swap');
+body{
+	padding: 50px; /*отступ */
+	background-color: tan; /*цвет фона*/
+	background-image: url("img/bg.jpg");/*фоновое изображение*/
+	background-size: cover; /*масштабирование фона до размера экрана*/
+	background-repeat: no-repeat;/*чтобы не повторядось*/
+	background-attachment: fixed; /*фиксация фонового изображения*/
+	font-family: 'Roboto', sans-serif;/*семейство шрифтов*/
+}
+
+h1, h2, h3, h4, h5, a{
+	font-family: 'Dancing Script', cursive; /*семейство шрифтов*/ 
+}
+.contaner{
+	width: 80%; /*ширина*/
+	min-height: 800px; /*минимальная высота*/
+	border: 15px solid white; /*рамка с размером и цветом*/
+	margin: 0 auto; /*выравнивает посередине блок*/
+	background: wheat;/*цвет фона*/
+}
+.header{
+	display: flex;
+	height: 100px; /*высота шапки*/
+	justify-content: center; /*текст по центру ширины*/
+	align-items: center;/*текст по центру высоты*/
+	font-size: 25px;/*размер текста*/
+	color: white; /*цвет текста*/
+	background: url("img/grass1.jpg") no-repeat center center /cover; /*фоновое изоражение*/
+	border-bottom: 15px solid white; /*нижняя рамка*/
+}
+.nav ul{
+	display: flex; /*в один ряд*/
+	justify-content: center; /*текст по центру ширины*/
+	align-items: center;/*текст по центру высоты*/
+}
+.nav li{
+	border: 5px solid tan; /*боковые разделители и полоски*/
+}
+.nav li a{
+	font-weight: bold; /*жирное начертание*/
+	display: flex; /*чтобы сделать эл блоком*/
+	text-decoration: none; /*убираем подчеркивание*/
+	padding: 10px 10px;
+	transition: 0.4s ease;/*плавность анимации*/
+}
+.nav li a:hover{ /*при наведении на область*/
+	color: white;
+}
+.cntent{
+	display: flex;
+}
