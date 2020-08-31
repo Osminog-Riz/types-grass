@@ -12,6 +12,19 @@ body{
 h1, h2, h3, h4, h5, a{
 	font-family: 'Dancing Script', cursive; /*семейство шрифтов*/ 
 }
+h1, h2{
+	color: white; /*цвет текста*/
+	font-size: 35px;/*размер текста*/ 
+}
+h3{
+	font-size: 30px;
+	color: green;
+	text-decoration: underline; /*подчеркивание*/
+}
+h4{
+	font-size: 25px;
+	text-decoration: underline;
+}
 .contaner{
 	width: 80%; /*ширина*/
 	min-height: 800px; /*минимальная высота*/
@@ -24,8 +37,7 @@ h1, h2, h3, h4, h5, a{
 	height: 100px; /*высота шапки*/
 	justify-content: center; /*текст по центру ширины*/
 	align-items: center;/*текст по центру высоты*/
-	font-size: 25px;/*размер текста*/
-	color: white; /*цвет текста*/
+
 	background: url("img/grass1.jpg") no-repeat center center /cover; /*фоновое изоражение*/
 	border-bottom: 15px solid white; /*нижняя рамка*/
 }
@@ -33,8 +45,10 @@ h1, h2, h3, h4, h5, a{
 	display: flex; /*в один ряд*/
 	justify-content: center; /*текст по центру ширины*/
 	align-items: center;/*текст по центру высоты*/
+
 }
 .nav li{
+	vertical-align: middle;
 	border: 5px solid tan; /*боковые разделители и полоски*/
 }
 .nav li a{
@@ -43,10 +57,17 @@ h1, h2, h3, h4, h5, a{
 	text-decoration: none; /*убираем подчеркивание*/
 	padding: 10px 10px;
 	transition: 0.4s ease;/*плавность анимации*/
+	color: green;
 }
 .nav li a:hover{ /*при наведении на область*/
-	color: white;
+	color: white; /*цвет ссылки*/
 }
-.cntent{
-	display: flex;
+
+.content{
+	text-align: center;
+}
+
+.image{
+	border: 10px solid tan;
+	width: 95%;
 }
